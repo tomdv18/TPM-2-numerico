@@ -7,4 +7,4 @@ function [valores,indices] = nMaximos(n,vector)
     i++;
    endwhile
 
-  endfunction
+endfunction
