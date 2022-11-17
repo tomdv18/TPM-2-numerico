@@ -1,4 +1,4 @@
-function ploteoDatos(cantidad_dias)
+function alturas = ploteoDatos(cantidad_dias)
  datos = csvread("ArchivosCSV/Point_Reyes_CA_2020.csv");
  cantidad_mediciones = length(datos)
  alturas = datos(2:cantidad_mediciones,5); #Me quedo con la 5ta columna
