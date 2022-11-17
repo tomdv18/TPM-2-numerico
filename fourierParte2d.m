@@ -5,14 +5,14 @@ function [coeficientes, ecm] = fourierParte2d(alturas)
 
   fi1 = ones(1,cantidad_horas);
 
-  fi2 = cos(((2 * pi)/cantidad_horas) * 348 * x);
-  fi3 = sin(((2 * pi)/cantidad_horas) * 348 * x);
+  fi2 = cos(((2 * pi)/cantidad_horas) * 705 * x);
+  fi3 = sin(((2 * pi)/cantidad_horas) * 705 * x);
 
-  fi4 = cos(((2 * pi)/cantidad_horas) * 181 * x);
-  fi5 = sin(((2 * pi)/cantidad_horas) * 181* x);
+  fi4 = cos(((2 * pi)/cantidad_horas) * 366 * x);
+  fi5 = sin(((2 * pi)/cantidad_horas) * 366* x);
 
-  fi6 = cos(((2 * pi)/cantidad_horas) * 167 * x);
-  fi7 = sin(((2 * pi)/cantidad_horas) * 167* x);
+  fi6 = cos(((2 * pi)/cantidad_horas) * 339 * x);
+  fi7 = sin(((2 * pi)/cantidad_horas) * 339 * x);
 
 
 
