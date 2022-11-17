@@ -8,7 +8,10 @@ function [coeficientes, ecm] = fourier1(alturas)
   fi3 = sin(((2 * pi)/cantidad_horas) * 7 * x);
 
 
-  M=[fi1*fi1' fi1*fi2' fi1*fi3'; fi2*fi1' fi2*fi2' fi2*fi3'; fi3*fi1' fi3*fi2' fi3*fi3'];
+  M=[fi1*fi1' fi1*fi2' fi1*fi3';
+    fi2*fi1' fi2*fi2' fi2*fi3';
+    fi3*fi1' fi3*fi2' fi3*fi3'];
+
   b = [y*fi1'; y*fi2'; y*fi3'];
   coeficientes = inv(M)*b;
 
