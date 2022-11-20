@@ -1,0 +1,22 @@
+Pasos para correr:
+
+1.
+alturas = ploteoDatos(Cantidad de dias);
+En donde la cantidad de dias depende del punto que estemos queriendo analizar.
+El siguiente ejemplo es para la parte 2 b
+
+ 	alturas = ploteoDatos(90);
+
+2. Para ver las frecuencias luego de aplicar una transformada rapida de Fourier:
+
+	[periodosHoras,periodosDias] = trf(alturas)
+
+3. Por ultimo corremos los archvios de Fourier dependiendo de la parte en la que estemos (En el ejemplo corremos fourierParte2b)
+
+	[coeficientes, ecm] = fourierParte2b(alturas)
+
+
+Para la parte donde predecimos con los armonicos, simplemente hay que correr la funcion que corresponda, el programa hace todo por si mismo. 
+Por ejemplo para predecir con un solo armonico corremos
+
+ECM = predicciones_1_armonico()
