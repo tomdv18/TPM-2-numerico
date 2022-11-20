@@ -24,6 +24,8 @@ function ecm = predicciones_4_armonico()
   fi8 = cos(((2 * pi)/cantidad_horas) * indices(4) * x);
   fi9 = sin(((2 * pi)/cantidad_horas) * indices(4) * x);
 
+ frecuencias_importantes = indices #Esta linea es solo para que se muestre por pantalla
+
 M=[fi1*fi1' fi1*fi2' fi1*fi3' fi1*fi4' fi1*fi5' fi1*fi6' fi1*fi7' fi1*fi8' fi1*fi9';
     fi2*fi1' fi2*fi2' fi2*fi3' fi2*fi4' fi2*fi5' fi2*fi6' fi2*fi7' fi2*fi8' fi2*fi9';
     fi3*fi1' fi3*fi2' fi3*fi3' fi3*fi4' fi3*fi5' fi3*fi6' fi3*fi7' fi3*fi8' fi3*fi9';
@@ -36,7 +38,7 @@ M=[fi1*fi1' fi1*fi2' fi1*fi3' fi1*fi4' fi1*fi5' fi1*fi6' fi1*fi7' fi1*fi8' fi1*f
 
   b = [y_2020*fi1'; y_2020*fi2'; y_2020*fi3'; y_2020*fi4'; y_2020*fi5'; y_2020*fi6' ;y_2020*fi7'; y_2020*fi8' ;y_2020*fi9'];
   coeficientes = inv(M)*b;
-
+  coeficientes_fourrier = coeficientes #Esta linea es solo para que se muestre por pantalla
   transformada = coeficientes(1)*fi1 +coeficientes(2)*fi2 + coeficientes(3)*fi3 + coeficientes(4)*fi4 + coeficientes(5)*fi5 + coeficientes(6)*fi6 + coeficientes(7)*fi7 + coeficientes(8)*fi8 + coeficientes(9)*fi9;
 
   diferencia = y_2021 - transformada;
